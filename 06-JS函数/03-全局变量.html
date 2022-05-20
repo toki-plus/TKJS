@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var var1 = 1; // 局部变量
+        var2 = 2; // 全局变量
+
+        alert("this.var1\n" + this.var1); // 1
+        alert("window.var1\n" + window.var1); // 1
+        alert("window.var2\n" + window.var2); // 2
+
+        alert("delete var1\n" + delete var1); // false 局部无法删除
+        alert("var1\n" + var1); //1
+
+        alert("delete var2\n" + delete var2); // true 全局变量可以删除
+        alert("var2\n" + var2); // 已经删除 报错变量未定义
+    </script>
+</head>
+<body>
+
+</body>
+</html>

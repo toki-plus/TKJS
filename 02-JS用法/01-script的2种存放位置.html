@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <!-- script 的2种存放位置 -->
+    <script>
+        function myFunction() {
+            // innerHTML 插入并覆盖 HTML
+            document.getElementById("demo").innerHTML = "我的第一个 JavaScript 函数";
+        }
+    </script>
+</head>
+<body>
+<h1>我的 Web 页面</h1>
+<p id="demo">一个段落</p>
+<!-- onclick 的函数要加括号 -->
+<button onclick="myFunction()" type="button">尝试一下</button>
+
+<!-- script 的2种存放位置 -->
+<!--<script>
+    function myFunction()
+    {
+        document.getElementById("demo").innerHTML="我的第一个 JavaScript 函数";
+    }
+</script>-->
+</body>
+</html>

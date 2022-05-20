@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // 转成字符串
+        alert(typeof String(100 + 23))
+        alert(typeof (100 + 23).toString())
+        alert(String(true))
+        alert(true.toString)
+        alert(String(new Date()))
+        obj = new Date()
+        alert(obj.toString())
+
+        // 转成数字
+        Number("3.14")    // 返回 3.14
+        Number(" ")       // 返回 0
+        Number("")        // 返回 0
+        Number("99 88")   // 返回 NaN
+
+        // 自动类型转换
+        5 + null    // 返回 5         null 转换为 0
+        "5" + null  // 返回"5null"   null 转换为 "null"
+        "5" + 1     // 返回 "51"      1 转换为 "1"
+        "5" - 1     // 返回 4         "5" 转换为 5
+    </script>
+</head>
+<body>
+
+</body>
+</html>

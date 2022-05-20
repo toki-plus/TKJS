@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        alert("John".constructor)                 // 返回函数 String()  { [native code] }
+        alert((3.14).constructor)                 // 返回函数 Number()  { [native code] }
+        alert(false.constructor)                  // 返回函数 Boolean() { [native code] }
+        alert([1,2,3,4].constructor)              // 返回函数 Array()   { [native code] }
+        alert({name:'John', age:34}.constructor)  // 返回函数 Object()  { [native code] }
+        alert(new Date().constructor)             // 返回函数 Date()    { [native code] }
+        alert(function () {}.constructor)         // 返回函数 Function(){ [native code] }
+
+        function isArray(myArray) {
+            alert(myArray.constructor.toString().indexOf("Array") > -1);
+        }
+
+        function isDate(myDate) {
+            alert(myDate.constructor.toString().indexOf("Date") > -1);
+        }
+    </script>
+</head>
+<body>
+<button onclick="isArray([1,2,3])" type="button">点我</button>
+</body>
+</html>

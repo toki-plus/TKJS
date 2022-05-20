@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <script>
+        document.write("<h1>这是一个标题</h1>");
+        document.write("<p id='demo'>这是一个段落</p>");
+
+        function changeImage() {
+            element = document.getElementById('myimage')
+            // match() 匹配字符串
+            if (element.src.match("bulbon")) {
+                element.src = "images/pic_bulboff.gif";
+            } else {
+                element.src = "images/pic_bulbon.gif";
+            }
+        }
+
+        x = document.getElementById("demo")
+        //改变样式
+        x.style.color="#ff0000";
+    </script>
+</head>
+<body>
+<button onclick="alert('欢迎!')" type="button">点我!</button>
+
+</br></br>
+
+<img height="180" id="myimage" loading="lazy" onclick="changeImage()" src="images/pic_bulboff.gif" width="100">
+
+<p>ECMAScript 6 也称为 ECMAScript 2015。</p>
+<p>ECMAScript 7 也称为 ECMAScript 2016。</p>
+</body>
+</html>
